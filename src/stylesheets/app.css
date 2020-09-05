@@ -1,0 +1,247 @@
+.appContainer{
+    text-align: left;
+}
+
+.title{
+    color: #f34a4a;
+    padding-bottom: 2vh;
+}
+
+.subtitle{
+    color: #F1D3BC;
+}
+
+.subtitle a{
+    color: #F1D3BC;
+}
+
+.subtitle a:hover{
+    color: #d8b397;
+}
+
+.split-left{
+    height: 100vh;
+}
+
+.split-right{
+    height: 100vh;
+    background-color: #31383b;
+}
+
+.controlContainer{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.dropZone {
+    cursor: pointer;
+    color: #f34a4a;
+    display: inline-block;
+    border: 2px solid #f34a4a;
+    border-radius: 5px;
+    background-color: #f34a4a15;
+
+    margin-bottom: 4em;
+    transition: 0.09s;
+}
+
+.dropZone:hover{
+    border: 5px solid #f34a4a;
+}
+
+.submit{
+    display: inline-block;
+    cursor: pointer;
+
+    color: #f34a4a;
+    border: 2px solid #f34a4a;
+    border-radius: 5px;
+    background-color: transparent;
+
+    transition: 0.5s;
+}
+
+.submit:hover{
+    color: #31383b;
+    background-color: #f34a4a;
+}
+
+.submit:disabled{
+    color: gray;
+    border: 2px solid gray;
+    cursor: not-allowed;
+}
+
+.submit:disabled:hover{
+    color: gray;
+    background-color: transparent;
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .dropZone{
+        line-height: 19vh;
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .submit{
+        line-height: 4.1vh;
+        width: 12vw;
+        height: 5vh;
+
+        margin: 3vh;
+        margin-top: 2em;
+    }
+
+    .title{
+        font-size: 3vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .subtitle{
+        font-size: 0.9vw;
+        width: 40vw;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1500px) {
+
+    .dropZone{
+        font-size: 13px;
+        line-height: 24vh;
+        width: 45vw;
+        height: 25vh;
+    }
+
+    .submit{
+        font-size: 13px;
+        line-height: 5.5vh;
+        width: 18vw;
+        height: 6vh;
+
+        margin: 5vh;
+        margin-top: 2em;
+    }
+
+    .title{
+        font-size: 3vw;
+        letter-spacing: 0.5vw;
+    }
+
+    .subtitle{
+        font-size: 1.3vw;
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+
+    .dropZone{
+        font-size: 13px;
+        line-height: 24vh;
+        width: 45vw;
+        height: 25vh;
+    }
+
+    .submit{
+        font-size: 13px;
+        line-height: 5.5vh;
+        width: 25vw;
+        height: 6vh;
+
+        margin: 5vh;
+        margin-top: 2em;
+    }
+
+    .titleContainer{
+        text-align: center;
+    }
+
+    .title{
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+        padding-bottom: 10vh;
+    }
+
+    .subtitle{
+        font-size: 1.3vw;
+        padding-bottom: 10vh;
+    }
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 700px) {
+
+    .dropZone{
+        font-size: 13px;
+        line-height: 24vh;
+        width: 65vw;
+        height: 25vh;
+    }
+
+    .submit{
+        font-size: 13px;
+        line-height: 5.5vh;
+        width: 25vw;
+        height: 6vh;
+
+        margin: 5vh;
+        margin-top: 2em;
+    }
+
+    .titleContainer{
+        text-align: center;
+    }
+
+    .title{
+        font-size: 5vw;
+        letter-spacing: 0.5vw;
+        padding-bottom: 10vh;
+    }
+
+    .subtitle{
+        font-size: 2.6vw;
+        padding-bottom: 10vh;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .dropZone{
+        font-size: 13px;
+        line-height: 24vh;
+        width: 80vw;
+        height: 25vh;
+    }
+
+    .submit{
+        font-size: 13px;
+        line-height: 5.5vh;
+        width: 35vw;
+        height: 6vh;
+
+        margin: 5vh;
+        margin-top: 2em;
+    }
+
+    .titleContainer{
+        text-align: center;
+    }
+
+    .title{
+        font-size: 8vw;
+        letter-spacing: 0.5vw;
+        padding-bottom: 10vh;
+    }
+
+    .subtitle{
+        font-size: 2.5vw;
+        padding-bottom: 10vh;
+    }
+
+}

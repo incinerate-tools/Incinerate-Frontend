@@ -1,0 +1,125 @@
+.fileContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+
+    color: #F1D3BC;
+
+    border: 2px solid #F1D3BC;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 45px;
+
+    transition: 250ms;
+}
+
+.innerFileName{
+    margin-left: 2em;
+    margin-right: 2em;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.innerClose{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.innerClose svg:hover{
+    cursor: pointer;
+    stroke: #c9a78d;
+}
+
+.innerStatus{
+    margin-left: 2em;
+    margin-right: 2em;
+
+    margin-left: auto;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.downloadBtn{
+    display: inline-block;
+    cursor: pointer;
+
+    color: #F1D3BC;
+    border: 2px solid #F1D3BC;
+    border-radius: 5px;
+    background-color: transparent;
+
+    height: 25px;
+    line-height: 20px;
+
+    transition: 0.2s;
+}
+
+.downloadBtn:hover{
+    color: #31383b;
+    background-color: #F1D3BC;
+}
+
+@media only screen and (min-width: 1500px) {
+
+    .fileContainer{
+        width: 38vw;
+    }
+
+    .innerFileName {
+        max-width: 50%;
+    }
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1500px) {
+
+    .fileContainer{
+        width: 43vw;
+    }
+
+    .innerFileName {
+        max-width: 30%;
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 800px) {
+
+    .fileContainer{
+        width: 43vw;
+    }
+
+    .innerFileName {
+        max-width: 10%;
+    }
+
+}
+
+@media only screen and (min-width: 451px) and (max-width: 700px) {
+
+    .fileContainer{
+        width: 63vw;
+    }
+
+    .innerFileName {
+        max-width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .fileContainer{
+        width: 78vw;
+    }
+
+    .innerFileName {
+        max-width: 30%;
+    }
+
+}
